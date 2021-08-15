@@ -77,8 +77,8 @@
 
 # Links dos projetos da arquitetura.
 
-> __Modelo Teste Funcional__
-> [Link do projeto](https://github.com/marcosregato/modeloTesteFuncional).</br>
+> __Teste Funcional QA__
+> [Link do projeto](https://github.com/marcosregato/funcionalQA).</br>
 
 > __Painel Teste Angular__
 > [Link do projeto](https://github.com/marcosregato/painelTesteQA).</br>
@@ -100,5 +100,3 @@
 
 > __Gerador massa de dados QA__
 > [Link do projeto](https://github.com/marcosregato/geradorMassaQA).</br>
-# modeloTesteFuncional
-# modeloTesteFuncional
