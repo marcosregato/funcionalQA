@@ -58,7 +58,7 @@ public class ResponseAPI {
 		}
 	}
 
-
+	/*
 	public void updateJson(File arqJdon) {
 		try {
 
@@ -95,7 +95,7 @@ public class ResponseAPI {
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 	/**
 	 * @param nomeClass
