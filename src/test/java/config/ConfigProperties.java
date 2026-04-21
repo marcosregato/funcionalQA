@@ -8,6 +8,28 @@ import java.util.Properties;
 public class ConfigProperties {
 	
 	public static String getProperty(String value) {
+        Properties properties = new Properties();
+        InputStream inputStream = null;
+        String path = System.getProperty("user.dir");
+        try {
+            inputStream = new FileInputStream(path + "/config.properties");
+            properties.load(inputStream);
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (Exception e) {
+                    // Ignore close exception
+                }
+            }
+        }
+        String result = properties.getProperty(value);
+        return result != null ? result.trim() : "";
+    }
+    
+    public static String getProperty(String key, String defaultValue) {
         Properties properties = null;
         InputStream inputStream = null;
         String path = System.getProperty("user.dir");
@@ -15,10 +37,19 @@ public class ConfigProperties {
             inputStream = new FileInputStream(path + "/config.properties");
             properties = new Properties();
             properties.load(inputStream);
+            String result = properties.getProperty(key);
+            return result != null ? result.trim() : defaultValue;
         } catch (Exception exception) {
-            exception.printStackTrace();
+            return defaultValue;
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (Exception e) {
+                    // Ignore close exception
+                }
+            }
         }
-        return properties.getProperty(value).trim();
     }
 	
 	public String pathFile(String file) {
