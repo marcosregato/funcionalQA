@@ -40,7 +40,7 @@ public class Validacao {
 		} catch (Exception e) {
 			manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
 			e.getMessage();
-			Browser.closeBrowser(driver);
+			Browser.closeBrowser();
 		}
 	}
 }

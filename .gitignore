@@ -114,3 +114,73 @@ config-local.properties
 *.bak
 *.backup
 *.orig
+
+# Cucumber
+*.feature~
+cucumber.yml
+cucumber.yaml
+
+# JUnit
+.junit/
+
+# Maven Surefire/Failsafe reports
+surefire-reports/
+failsafe-reports/
+
+# Gradle (if used in future)
+.gradle/
+gradlew
+gradlew.bat
+gradle-wrapper.jar
+
+# Node.js (if used for frontend tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.h2.db
+
+# Performance monitoring
+*.prof
+*.hprof
+
+# IDE specific workspace files
+.metadata/
+.recommenders/
+
+# SonarQube
+.sonar/
+
+# Checkstyle/SpotBugs
+.checkstyle/
+spotbugs*
+
+# JaCoCo coverage reports
+*.exec
+site/jacoco/
+
+# Docker
+.docker/
+
+# Kubernetes
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Lock files (package managers)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
